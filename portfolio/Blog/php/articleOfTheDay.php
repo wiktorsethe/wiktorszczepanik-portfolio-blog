@@ -1,5 +1,5 @@
 <?php 
-    include_once 'blog/php/db.php';
+    include_once('db.php');
     $side_article_quesiton = "SELECT id, author_name, author_surname, title, text, date, likes FROM articles, authors WHERE articles.author_id = authors.author_id GROUP BY id ORDER BY likes DESC LIMIT 1";
     $side_article_mission = mysqli_query($connect, $side_article_quesiton);
     $side_article_case = mysqli_fetch_array($side_article_mission);
@@ -18,15 +18,17 @@
     $substring_case = mysqli_fetch_row($substring_mission);
                 echo '<div id="side-content">
                     <div id="side-text">
-                        <a href="blog/html/articlepage'.$side_article_case["id"].'.php">'
+                        <a href="articlepage'.$side_article_case["id"].'.php">'
                         .$substring_case[1].'...'.
                         '</a>
                     </div>
+                </div>
+                <div id="side-footer">
                     <span class="likes">
                         <i class="fa-regular fa-heart"></i>
                         <p>'.$side_article_case["likes"].'</p>
                     </span>
-                    <p class="date">'.$side_article_case["date"].'</p>
+                    <p class="date">'.$side_article_case["date"].'</p>      
                 </div>
             </div>';
 ?>

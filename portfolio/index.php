@@ -30,7 +30,7 @@
 
         <div class="nav">
             <ul>
-                <li><a href="#">Contact</a></li>
+                <li><a href="Blog/html/contact.php">Contact</a></li>
                 <li><a href="#">Links</a></li>
             </ul>
         </div>
@@ -41,10 +41,22 @@
         <input type="checkbox" id="check">
 
         <div id="nav-mobile">
+
+            <div id="logo-cell-mobile">
+                <div id="logo">
+                    <a href="index.php">Blog.net</a>
+                </div>
+            </div>
+
+            <label for="check" id="checkbtn-mobile">
+                <i class="fa-sharp fa-solid fa-bars"></i>
+            </label>
+            <input type="checkbox" id="check">
+
             <ul>
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="Blog/html/contact.php">Contact</a></li>
                 <li><a href="#">Links</a></li>
             </ul>
         </div>

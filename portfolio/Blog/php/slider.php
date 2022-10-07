@@ -1,5 +1,5 @@
 <?php
-    include_once 'blog/php/db.php';
+    include_once('db.php');
     
     for($i=1; $i<=6; $i++){
     $slider_quesiton = "SELECT * FROM articles, authors, images WHERE articles.author_id = authors.author_id AND articles.image_id = images.id AND articles.id = $i";
@@ -12,7 +12,7 @@
                     <p>'.$slider_case["author_name"].'<br>'.$slider_case["author_surname"].'</p>
                 </span>
                 <div id="article-title">
-                    <a href="Blog/html/articlepage'.$i.'.php">
+                    <a href="articlepage'.$i.'.php">
                         <p>'.$slider_case["title"].'</p>
                     </a>
                 </div>
@@ -35,12 +35,12 @@
     $substring_mission = mysqli_query($connect, $substring_quesiton);
     $substring_case = mysqli_fetch_row($substring_mission);
                 echo '<div id="article-text">
-                    <a href="Blog/html/articlepage'.$i.'.php">
+                    <a href="articlepage'.$i.'.php">
                         <p>'.$substring_case[0].'...'.'</p>
                     </a>
                 </div>
             </div>
-            <a href="Blog/html/articlepage'.$i.'.php" class="article-btn"><p>Enter</p></a>
+            <a href="articlepage'.$i.'.php" class="article-btn"><p>Enter</p></a>
         </div>';
             };
 ?>

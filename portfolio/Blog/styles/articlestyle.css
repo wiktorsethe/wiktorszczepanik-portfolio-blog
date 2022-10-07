@@ -6,7 +6,7 @@
         font-style: normal;
         
     }
-
+    
     body{
         display: flex;
         flex-direction: column;
@@ -199,7 +199,7 @@
         padding: 0 0.1em;
         display: table;
         position: relative;
-        font-family: Long Shot;
+        font-family: 'Long Shot';
         font-size: 50px;
         color: whitesmoke;
         
@@ -613,6 +613,14 @@
 }
 
 @media(min-width: 426px) and (max-width: 768px){
+    @font-face {
+        font-family: Long Shot;
+        src: url(../font/Long_Shot.ttf);
+        font-weight: normal;
+        font-style: normal;
+        
+    }
+    
     body{
         display: flex;
         flex-direction: column;
@@ -650,6 +658,7 @@
         height: 15vh;
         margin: 2vh auto;
         position: relative;
+        font-family: Long Shot;
         
     }
 
@@ -661,7 +670,7 @@
         transform: translateY(-50%);
         height: fit-content;
         font-size: 50px;
-        z-index: 4;
+        z-index: 1;
         color: whitesmoke;
         transition: 0.5s;
 
@@ -683,23 +692,21 @@
     #nav-mobile{
         margin: 0;
         padding: 0;
-        display: table;
-        justify-content: space-between;
         position: fixed;
         width: 100%;
         height: 100vh;
         background: white;
-        top: 19vh;
+        top: 0;
         right: -100%;
         z-index: 3;
         transition: 0.5s;
+        
     }
 
     #nav-mobile ul{
-        padding: 0 0 0 0;
+        padding: 0;
         margin: 0;
-        width: fit-content;
-        display: table-cell;
+        width: 100%;
         justify-content: center;
     }
 
@@ -723,6 +730,10 @@
 
     }
 
+    #nav-mobile li:first-child{
+        border-top: solid 1px rgb(251, 38, 38);
+    }
+
     #nav-mobile li a{
         text-decoration: none;
         color: black;
@@ -734,11 +745,41 @@
         transition: 0.2s;
     }
 
+    #logo-cell-mobile{
+        display: flex;
+        justify-content: center;
+        height: 15vh;
+        margin: 2vh 0;
+    }
+
+    #logo-cell-mobile #logo a{
+        color: black;
+    }
+
     #logo-cell{
         display: flex;
         justify-content: center;
         height: 100%;
+        z-index: 1;
+    }
+
+    #checkbtn-mobile{
+        display: flex;
+        position: absolute;
+        right: 4.5%;
+        top: 9.5%;
+        transform: translateY(-50%);
+        height: fit-content;
+        font-size: 50px;
         z-index: 4;
+        color: black;
+        transition: 0.5s;
+
+    }
+
+    #checkbtn-mobile:active{
+        transition: 0.1s;
+        color: rgb(251, 38, 38);
     }
 
     #logo{
@@ -1079,6 +1120,14 @@
 }
 
 @media (max-width: 425px){
+    @font-face {
+        font-family: Long Shot;
+        src: url(../font/Long_Shot.ttf);
+        font-weight: normal;
+        font-style: normal;
+        
+    }
+    
     body{
         display: flex;
         flex-direction: column;
@@ -1127,7 +1176,7 @@
         transform: translateY(-50%);
         height: fit-content;
         font-size: 50px;
-        z-index: 4;
+        z-index: 1;
         color: whitesmoke;
         transition: 0.5s;
 
@@ -1149,26 +1198,22 @@
     #nav-mobile{
         margin: 0;
         padding: 0;
-        display: table;
-        justify-content: space-between;
         position: fixed;
         width: 100%;
         height: 100vh;
         background: white;
-        top: 19vh;
+        top: 0;
         right: -100%;
         z-index: 3;
         transition: 0.5s;
-
+        
     }
 
     #nav-mobile ul{
-        padding: 0 0 0 0;
+        padding: 0;
         margin: 0;
-        width: fit-content;
-        display: table-cell;
+        width: 100%;
         justify-content: center;
-       
     }
 
     #check:checked ~ #nav-mobile{
@@ -1191,6 +1236,10 @@
 
     }
 
+    #nav-mobile li:first-child{
+        border-top: solid 1px rgb(251, 38, 38);
+    }
+
     #nav-mobile li a{
         text-decoration: none;
         color: black;
@@ -1202,23 +1251,50 @@
         transition: 0.2s;
     }
 
+    #logo-cell-mobile{
+        display: flex;
+        justify-content: center;
+        height: 15vh;
+        margin: 2vh 0;
+    }
+
+    #logo-cell-mobile #logo a{
+        color: black;
+    }
+
     #logo-cell{
-        width: 80%;
         display: flex;
         justify-content: center;
         height: 100%;
+        z-index: 1;
+    }
+
+    #checkbtn-mobile{
+        display: flex;
+        position: absolute;
+        right: 4.5%;
+        top: 9.5%;
+        transform: translateY(-50%);
+        height: fit-content;
+        font-size: 50px;
         z-index: 4;
+        color: black;
+        transition: 0.5s;
 
     }
 
+    #checkbtn-mobile:active{
+        transition: 0.1s;
+        color: rgb(251, 38, 38);
+    }
+
     #logo{
-        height: 80%;
-        padding: 0;
+        height: 100%;
+        padding: 0 0.1em;
         display: table;
-        margin: auto;
         position: relative;
         font-family: Long Shot;
-        font-size: 40px;
+        font-size: 50px;
         color: whitesmoke;
         
     }
@@ -1229,7 +1305,7 @@
         display: table-cell;
         text-decoration: none;
         color: whitesmoke;
-        padding: 0 0.3em;
+        padding: 0 0.5em;
     }
 
     #logo::before, #logo::after, #logo>:first-child::before, #logo>:first-child::after {
@@ -1420,7 +1496,7 @@
         display: table-cell;
         padding-right: 0.5em;
         font-size: 20px;
-        font-family: long shot;
+        font-family: Long Shot;
 
     }
 

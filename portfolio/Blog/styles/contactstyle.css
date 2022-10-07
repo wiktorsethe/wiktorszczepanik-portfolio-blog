@@ -1,0 +1,746 @@
+@media(min-width: 769px){
+    body{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 98vh;
+        background-color: #EFE1CE;
+
+    }
+
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: white;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: rgb(248, 91, 91);
+
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgb(220, 63, 63);
+        width: 10px;
+    }
+
+    #header{
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        height: 10vh;
+        margin: 2vh auto;
+        justify-content: flex-end;
+        
+    }
+
+    .nav{
+        flex-basis: 40%;
+        display: table;
+            
+    }
+
+    .nav ul{
+        padding: 0;
+        margin: 0;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+
+    }
+
+    .nav li{
+        list-style-type: none;
+        display: inline;
+        padding: 0.3em 0.5em;
+        font-size: 30px;
+        background-color: transparent;
+        position: relative;
+        transition: 1s;
+
+    }
+
+    .nav li a{
+        text-decoration: none;
+        color: black;
+        position: relative;
+
+    }
+
+    .nav li:after{
+        content: ' ';
+        position: absolute;
+        left: 50%;
+        bottom: 10px;
+        width: 0px;
+        height: 2px;
+        background: #333;
+        transition: all 0.45s;
+    }
+
+    .nav li:hover:after {
+        width: 100%;
+        left: 0;
+    }
+
+    #content{
+        width: 90%;
+        margin: 0 auto;
+        height: 80vh;
+        background-color: white;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #main-content{
+        flex-basis: 75%;
+        height: 96%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    #main-header{
+        flex-basis: 20%;
+        margin: 0 4%;
+        padding-top: 1%;
+        
+    }
+
+    h1, p, h4{
+        margin: 0;
+    }
+
+    #main-form{
+        flex-basis: 77%;
+        
+    }
+
+    .form{
+        width: 100%;
+        height: 100%;
+
+    }
+
+    label,input{
+        display: block;
+    }
+
+    #row{
+        padding-left: 4%;
+        height: 20%;
+
+    }
+
+    .input-group{
+        float: left;
+        width: 49%;
+        font-size: 12px;
+        font-weight: bold;
+        
+    }
+
+    .input-group:nth-child(2){
+        float: left;
+        width: 49%;
+        font-size: 12px;
+        font-weight: bold;
+        
+    }
+
+    #name, #email{
+        width: 90%;
+        padding-left: 2%;
+        height: 2em;
+        background-color: lightgrey;
+        border-radius: 3px;
+        border: none;
+        outline: none;
+        font-size: 24px;
+
+    }
+
+    .textarea{
+        clear: both;
+        margin-top: 1em;
+        width: 90.5%;
+        padding-left: 4%;
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        font-weight: bold;
+        flex-basis: 75%;
+        
+    }
+
+    #message{
+        padding: 2%;
+        height: 100%;
+        resize: none;
+        border: none;
+        outline: none;
+        background-color: lightgrey;
+        border-radius: 3px;
+        font-size: 24px;
+        
+    }
+
+    .submit-btn{
+        padding: 0.5em;
+        width: 5em;
+        margin-top: 1em;
+        margin-left: 4%;
+        border: none;
+        background-color:rgb(251, 38, 38);
+        border-radius: 3px;
+        font-size: 20px;
+        color: whitesmoke;
+        font-weight: bold;
+    }
+
+    .submit-btn:hover{
+        cursor: pointer;
+    }
+
+    #side-content{
+        flex-basis: 23%;
+        height: 90%;
+        margin: auto;
+        border-left: 1px solid rgb(251, 38, 38);
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .side-contact{
+        flex-basis: 20%;
+        margin: 1em;
+
+    }
+
+    .side-contact:last-child{
+        flex-basis: 40%;
+
+    }
+
+    .fa-brands{
+        font-size: 54px;
+        margin: 0.1em;
+        transition: 0.3s;
+
+    }
+
+    .fa-square-instagram{
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .fa-square-facebook{
+        color: #3b5998;
+    }
+
+    .fa-square-github{
+        color: #333;
+    }
+
+    .fa-brands:hover{
+        margin: -0.05em 0.03em 0 0.03em;
+        font-size: 62px;
+        z-index: 2;
+
+    }
+}
+
+@media(min-width: 426px) and (max-width: 768px){
+    body{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 98vh;
+        background-color: #EFE1CE;
+
+    }
+
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: white;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: rgb(248, 91, 91);
+
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgb(220, 63, 63);
+        width: 10px;
+    }
+
+    #header{
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        height: 10vh;
+        margin: 2vh auto;
+        justify-content: flex-end;
+        
+    }
+
+    .nav{
+        flex-basis: 80%;
+        display: table;
+            
+    }
+
+    .nav ul{
+        padding: 0;
+        margin: 0;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+
+    }
+
+    .nav li{
+        list-style-type: none;
+        display: inline;
+        padding: 0.3em 0.5em;
+        font-size: 30px;
+        background-color: transparent;
+        position: relative;
+        transition: 1s;
+
+    }
+
+    .nav li a{
+        text-decoration: none;
+        color: black;
+        position: relative;
+
+    }
+
+    .nav li:after{
+        content: ' ';
+        position: absolute;
+        left: 50%;
+        bottom: 10px;
+        width: 0px;
+        height: 2px;
+        background: #333;
+        transition: all 0.45s;
+    }
+
+    .nav li:hover:after {
+        width: 100%;
+        left: 0;
+    }
+
+    #content{
+        width: 90%;
+        margin: 0 auto;
+        height: 80vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #main-content{
+        flex-basis: 55%;
+        margin: 1em auto 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    #main-header{
+        flex-basis: 20%;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 1%;
+
+    }
+
+    h1, p, h4{
+        margin: 0;
+    }
+
+    #main-form{
+        flex-basis: 77%;
+        padding-top: 1%;
+        width: 90%;
+        margin: 0 auto;
+
+    }
+
+    .form{
+        width: 100%;
+        height: 100%;
+       
+    }
+
+    label,input{
+        display: block;
+
+    }
+
+    #row{
+        height: 30%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .input-group{
+        flex-basis: 47%;
+        font-size: 12px;
+        font-weight: bold;
+        
+    }
+
+    #name, #email{
+        width: 97%;
+        padding-left: 2%;
+        height: 2em;
+        background-color: lightgrey;
+        border-radius: 3px;
+        border: none;
+        outline: none;
+        font-size: 24px;
+
+    }
+
+    .textarea{
+        clear: both;
+        width: 96%;
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        font-weight: bold;
+        flex-basis: 75%;
+        
+    }
+
+    #message{
+        width: 100%;
+        padding: 2%;
+        height: 100%;
+        resize: none;
+        border: none;
+        outline: none;
+        background-color: lightgrey;
+        border-radius: 3px;
+        font-size: 24px;
+        
+    }
+
+    .submit-btn{
+        padding: 0.5em;
+        width: 5em;
+        margin-top: 1em;
+        border: none;
+        background-color:rgb(251, 38, 38);
+        border-radius: 3px;
+        font-size: 20px;
+        color: whitesmoke;
+        font-weight: bold;
+    }
+    
+    .submit-btn:hover{
+        cursor: pointer;
+    }
+
+    #side-content{
+        width: 100%;
+        flex-basis: 40%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+    }
+
+    .side-contact{
+        flex-basis: 30%;
+        height:fit-content;
+        margin: 5%;
+        padding-left: 2%;
+        border-left: 1px solid rgb(251, 38, 38);
+    }
+    
+    .side-contact:last-child{
+        border: none;
+        flex-basis: 100%;
+    }
+
+    .fa-brands{
+        font-size: 54px;
+        margin: 0.1em;
+        transition: 0.3s;
+
+    }
+
+    .fa-square-instagram{
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .fa-square-facebook{
+        color: #3b5998;
+    }
+
+    .fa-square-github{
+        color: #333;
+    }
+
+    .fa-brands:hover{
+        margin: -0.05em 0.03em 0 0.03em;
+        font-size: 62px;
+        z-index: 2;
+
+    }
+}
+
+@media(max-width: 425px){
+    body{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 98vh;
+        background-color: #EFE1CE;
+
+    }
+
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: white;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: rgb(248, 91, 91);
+
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgb(220, 63, 63);
+        width: 10px;
+    }
+
+    #header{
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        height: 10vh;
+        margin: 2vh auto;
+        
+    }
+
+    .nav{
+        flex-basis: 100%;
+        display: table;
+            
+    }
+
+    .nav ul{
+        padding: 0;
+        margin: 0;
+        display: table-cell;
+        vertical-align: middle;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    .nav li{
+        list-style-type: none;
+        display: inline;
+        padding: 0.3em 0.5em;
+        font-size: 30px;
+        background-color: transparent;
+        position: relative;
+        transition: 1s;
+
+    }
+
+    .nav li a{
+        text-decoration: none;
+        color: black;
+        position: relative;
+
+    }
+
+    #content{
+        width: 95%;
+        margin: 0 auto;
+        min-height: 85vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #main-content{
+        flex-basis: 60%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    #main-header{
+        flex-basis: 20%;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 1%;
+        text-align: center;
+
+    }
+
+    h1, p, h4{
+        margin: 0;
+    }
+
+    #main-form{
+        flex-basis: 50%;
+        padding-top: 1%;
+        width: 90%;
+        margin: 0 auto;
+
+    }
+
+    .form{
+        width: 100%;
+        height: 100%;
+        position: relative;
+    } 
+
+    label,input{
+        display: block;
+
+    }
+
+    .input-group{
+        flex-basis: 100%;
+        font-size: 12px;
+        font-weight: bold;
+        margin: 1em 0;
+    }
+
+    #name, #email{
+        width: 97.5%;
+        padding-left: 2%;
+        height: 2em;
+        background-color: lightgrey;
+        border-radius: 3px;
+        border: none;
+        outline: none;
+        font-size: 24px;
+
+    }
+
+    .textarea{
+        clear: both;
+        width: 96%;
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        font-weight: bold;
+        
+    }
+
+    #message{
+        width: 100%;
+        padding: 2%;
+        height: 20vh;
+        resize: none;
+        border: none;
+        outline: none;
+        background-color: lightgrey;
+        border-radius: 3px;
+        font-size: 24px;
+        
+    }
+
+    .submit-btn{
+        padding: 0.5em;
+        width: 5em;
+        margin: 1em 0;
+        border: none;
+        background-color:rgb(251, 38, 38);
+        border-radius: 3px;
+        font-size: 20px;
+        color: whitesmoke;
+        font-weight: bold;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+
+    #side-content{
+        width: 100%;
+        flex-basis: 30%;
+        margin: 4em auto;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .side-contact{
+        text-align: center;
+        flex-basis: 20%;
+        width: 70%;
+        height:fit-content;
+        margin: 5% auto;
+        padding-left: 2%;
+
+    }
+
+    .side-contact:last-child{
+        border: none;
+        flex-basis: 100%;
+    }
+
+    .fa-brands{
+        font-size: 54px;
+        margin: 0.1em;
+        transition: 0.3s;
+
+    }
+
+    .fa-square-instagram{
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .fa-square-facebook{
+        color: #3b5998;
+    }
+
+    .fa-square-github{
+        color: #333;
+    }
+
+    .fa-brands:hover{
+        margin: -0.05em 0.03em 0 0.03em;
+        font-size: 62px;
+        z-index: 2;
+
+    }
+}
